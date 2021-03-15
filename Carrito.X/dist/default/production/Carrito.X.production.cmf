@@ -1,0 +1,353 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$build/default/production/Carritoo.o
+resetVec CODE 0 72D 72D 3 2
+code CODE 0 730 730 D0 2
+udata_bank0 BANK0 1 20 20 2 1
+config CONFIG 4 2007 2007 1 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 22-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 22-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 0-72C 2
+CONST 800-1FFF 2
+ENTRY 0-72C 2
+ENTRY 800-1FFF 2
+IDLOC 2000-2003 2
+CODE 0-72C 2
+CODE 800-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-10F 1
+SFR3 180-18F 1
+COMMON 70-7F 1
+EEDATA 2100-21FF 2
+STRCODE 0-72C 2
+STRCODE 800-1FFF 2
+STRING 0-72C 2
+STRING 800-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$build/default/production/Carritoo.o
+72D resetVec CODE >26:/root/MPLABXProjects/Carrito.X/Carritoo.s
+72F resetVec CODE >27:/root/MPLABXProjects/Carrito.X/Carritoo.s
+730 code CODE >33:/root/MPLABXProjects/Carrito.X/Carritoo.s
+731 code CODE >34:/root/MPLABXProjects/Carrito.X/Carritoo.s
+732 code CODE >36:/root/MPLABXProjects/Carrito.X/Carritoo.s
+733 code CODE >37:/root/MPLABXProjects/Carrito.X/Carritoo.s
+734 code CODE >38:/root/MPLABXProjects/Carrito.X/Carritoo.s
+735 code CODE >39:/root/MPLABXProjects/Carrito.X/Carritoo.s
+736 code CODE >40:/root/MPLABXProjects/Carrito.X/Carritoo.s
+737 code CODE >42:/root/MPLABXProjects/Carrito.X/Carritoo.s
+738 code CODE >43:/root/MPLABXProjects/Carrito.X/Carritoo.s
+739 code CODE >44:/root/MPLABXProjects/Carrito.X/Carritoo.s
+73A code CODE >45:/root/MPLABXProjects/Carrito.X/Carritoo.s
+73B code CODE >46:/root/MPLABXProjects/Carrito.X/Carritoo.s
+73C code CODE >47:/root/MPLABXProjects/Carrito.X/Carritoo.s
+73D code CODE >48:/root/MPLABXProjects/Carrito.X/Carritoo.s
+73E code CODE >50:/root/MPLABXProjects/Carrito.X/Carritoo.s
+73F code CODE >53:/root/MPLABXProjects/Carrito.X/Carritoo.s
+740 code CODE >54:/root/MPLABXProjects/Carrito.X/Carritoo.s
+741 code CODE >57:/root/MPLABXProjects/Carrito.X/Carritoo.s
+742 code CODE >58:/root/MPLABXProjects/Carrito.X/Carritoo.s
+743 code CODE >59:/root/MPLABXProjects/Carrito.X/Carritoo.s
+744 code CODE >60:/root/MPLABXProjects/Carrito.X/Carritoo.s
+745 code CODE >61:/root/MPLABXProjects/Carrito.X/Carritoo.s
+746 code CODE >62:/root/MPLABXProjects/Carrito.X/Carritoo.s
+747 code CODE >63:/root/MPLABXProjects/Carrito.X/Carritoo.s
+748 code CODE >66:/root/MPLABXProjects/Carrito.X/Carritoo.s
+749 code CODE >67:/root/MPLABXProjects/Carrito.X/Carritoo.s
+74A code CODE >68:/root/MPLABXProjects/Carrito.X/Carritoo.s
+74B code CODE >69:/root/MPLABXProjects/Carrito.X/Carritoo.s
+74C code CODE >70:/root/MPLABXProjects/Carrito.X/Carritoo.s
+74D code CODE >71:/root/MPLABXProjects/Carrito.X/Carritoo.s
+74E code CODE >72:/root/MPLABXProjects/Carrito.X/Carritoo.s
+74F code CODE >73:/root/MPLABXProjects/Carrito.X/Carritoo.s
+750 code CODE >77:/root/MPLABXProjects/Carrito.X/Carritoo.s
+751 code CODE >78:/root/MPLABXProjects/Carrito.X/Carritoo.s
+752 code CODE >79:/root/MPLABXProjects/Carrito.X/Carritoo.s
+753 code CODE >80:/root/MPLABXProjects/Carrito.X/Carritoo.s
+754 code CODE >81:/root/MPLABXProjects/Carrito.X/Carritoo.s
+755 code CODE >82:/root/MPLABXProjects/Carrito.X/Carritoo.s
+756 code CODE >83:/root/MPLABXProjects/Carrito.X/Carritoo.s
+757 code CODE >84:/root/MPLABXProjects/Carrito.X/Carritoo.s
+758 code CODE >85:/root/MPLABXProjects/Carrito.X/Carritoo.s
+759 code CODE >88:/root/MPLABXProjects/Carrito.X/Carritoo.s
+75A code CODE >89:/root/MPLABXProjects/Carrito.X/Carritoo.s
+75B code CODE >90:/root/MPLABXProjects/Carrito.X/Carritoo.s
+75C code CODE >91:/root/MPLABXProjects/Carrito.X/Carritoo.s
+75D code CODE >92:/root/MPLABXProjects/Carrito.X/Carritoo.s
+75E code CODE >93:/root/MPLABXProjects/Carrito.X/Carritoo.s
+75F code CODE >94:/root/MPLABXProjects/Carrito.X/Carritoo.s
+760 code CODE >95:/root/MPLABXProjects/Carrito.X/Carritoo.s
+761 code CODE >96:/root/MPLABXProjects/Carrito.X/Carritoo.s
+762 code CODE >97:/root/MPLABXProjects/Carrito.X/Carritoo.s
+763 code CODE >100:/root/MPLABXProjects/Carrito.X/Carritoo.s
+764 code CODE >101:/root/MPLABXProjects/Carrito.X/Carritoo.s
+765 code CODE >102:/root/MPLABXProjects/Carrito.X/Carritoo.s
+766 code CODE >103:/root/MPLABXProjects/Carrito.X/Carritoo.s
+767 code CODE >104:/root/MPLABXProjects/Carrito.X/Carritoo.s
+768 code CODE >105:/root/MPLABXProjects/Carrito.X/Carritoo.s
+769 code CODE >106:/root/MPLABXProjects/Carrito.X/Carritoo.s
+76A code CODE >107:/root/MPLABXProjects/Carrito.X/Carritoo.s
+76B code CODE >108:/root/MPLABXProjects/Carrito.X/Carritoo.s
+76C code CODE >109:/root/MPLABXProjects/Carrito.X/Carritoo.s
+76D code CODE >110:/root/MPLABXProjects/Carrito.X/Carritoo.s
+76E code CODE >113:/root/MPLABXProjects/Carrito.X/Carritoo.s
+76F code CODE >114:/root/MPLABXProjects/Carrito.X/Carritoo.s
+770 code CODE >115:/root/MPLABXProjects/Carrito.X/Carritoo.s
+771 code CODE >116:/root/MPLABXProjects/Carrito.X/Carritoo.s
+772 code CODE >117:/root/MPLABXProjects/Carrito.X/Carritoo.s
+773 code CODE >118:/root/MPLABXProjects/Carrito.X/Carritoo.s
+774 code CODE >119:/root/MPLABXProjects/Carrito.X/Carritoo.s
+775 code CODE >120:/root/MPLABXProjects/Carrito.X/Carritoo.s
+776 code CODE >123:/root/MPLABXProjects/Carrito.X/Carritoo.s
+777 code CODE >124:/root/MPLABXProjects/Carrito.X/Carritoo.s
+778 code CODE >125:/root/MPLABXProjects/Carrito.X/Carritoo.s
+779 code CODE >126:/root/MPLABXProjects/Carrito.X/Carritoo.s
+77A code CODE >127:/root/MPLABXProjects/Carrito.X/Carritoo.s
+77B code CODE >128:/root/MPLABXProjects/Carrito.X/Carritoo.s
+77C code CODE >129:/root/MPLABXProjects/Carrito.X/Carritoo.s
+77D code CODE >130:/root/MPLABXProjects/Carrito.X/Carritoo.s
+77E code CODE >131:/root/MPLABXProjects/Carrito.X/Carritoo.s
+77F code CODE >134:/root/MPLABXProjects/Carrito.X/Carritoo.s
+780 code CODE >135:/root/MPLABXProjects/Carrito.X/Carritoo.s
+781 code CODE >136:/root/MPLABXProjects/Carrito.X/Carritoo.s
+782 code CODE >137:/root/MPLABXProjects/Carrito.X/Carritoo.s
+783 code CODE >138:/root/MPLABXProjects/Carrito.X/Carritoo.s
+784 code CODE >139:/root/MPLABXProjects/Carrito.X/Carritoo.s
+785 code CODE >140:/root/MPLABXProjects/Carrito.X/Carritoo.s
+786 code CODE >141:/root/MPLABXProjects/Carrito.X/Carritoo.s
+787 code CODE >142:/root/MPLABXProjects/Carrito.X/Carritoo.s
+788 code CODE >143:/root/MPLABXProjects/Carrito.X/Carritoo.s
+789 code CODE >146:/root/MPLABXProjects/Carrito.X/Carritoo.s
+78A code CODE >147:/root/MPLABXProjects/Carrito.X/Carritoo.s
+78B code CODE >148:/root/MPLABXProjects/Carrito.X/Carritoo.s
+78C code CODE >149:/root/MPLABXProjects/Carrito.X/Carritoo.s
+78D code CODE >150:/root/MPLABXProjects/Carrito.X/Carritoo.s
+78E code CODE >151:/root/MPLABXProjects/Carrito.X/Carritoo.s
+78F code CODE >152:/root/MPLABXProjects/Carrito.X/Carritoo.s
+790 code CODE >153:/root/MPLABXProjects/Carrito.X/Carritoo.s
+791 code CODE >154:/root/MPLABXProjects/Carrito.X/Carritoo.s
+792 code CODE >155:/root/MPLABXProjects/Carrito.X/Carritoo.s
+793 code CODE >156:/root/MPLABXProjects/Carrito.X/Carritoo.s
+794 code CODE >159:/root/MPLABXProjects/Carrito.X/Carritoo.s
+795 code CODE >160:/root/MPLABXProjects/Carrito.X/Carritoo.s
+796 code CODE >161:/root/MPLABXProjects/Carrito.X/Carritoo.s
+797 code CODE >162:/root/MPLABXProjects/Carrito.X/Carritoo.s
+798 code CODE >163:/root/MPLABXProjects/Carrito.X/Carritoo.s
+799 code CODE >164:/root/MPLABXProjects/Carrito.X/Carritoo.s
+79A code CODE >165:/root/MPLABXProjects/Carrito.X/Carritoo.s
+79B code CODE >166:/root/MPLABXProjects/Carrito.X/Carritoo.s
+79C code CODE >167:/root/MPLABXProjects/Carrito.X/Carritoo.s
+79D code CODE >168:/root/MPLABXProjects/Carrito.X/Carritoo.s
+79E code CODE >169:/root/MPLABXProjects/Carrito.X/Carritoo.s
+79F code CODE >170:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7A0 code CODE >172:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7A1 code CODE >174:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7A2 code CODE >175:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7A3 code CODE >176:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7A4 code CODE >178:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7A5 code CODE >179:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7A6 code CODE >180:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7A7 code CODE >182:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7A8 code CODE >183:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7A9 code CODE >184:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7AA code CODE >186:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7AB code CODE >187:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7AC code CODE >188:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7AD code CODE >189:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7AE code CODE >191:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7AF code CODE >192:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7B0 code CODE >193:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7B1 code CODE >195:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7B2 code CODE >196:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7B3 code CODE >200:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7B4 code CODE >201:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7B5 code CODE >202:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7B6 code CODE >204:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7B7 code CODE >205:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7B8 code CODE >206:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7B9 code CODE >208:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7BA code CODE >209:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7BB code CODE >210:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7BC code CODE >212:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7BD code CODE >213:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7BE code CODE >214:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7BF code CODE >215:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7C0 code CODE >217:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7C1 code CODE >218:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7C2 code CODE >219:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7C3 code CODE >221:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7C4 code CODE >222:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7C5 code CODE >225:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7C6 code CODE >226:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7C7 code CODE >227:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7C8 code CODE >230:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7C9 code CODE >231:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7CA code CODE >232:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7CB code CODE >233:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7CC code CODE >234:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7CD code CODE >236:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7CE code CODE >237:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7CF code CODE >238:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7D0 code CODE >240:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7D1 code CODE >241:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7D2 code CODE >246:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7D3 code CODE >247:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7D4 code CODE >248:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7D5 code CODE >249:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7D6 code CODE >250:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7D7 code CODE >252:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7D8 code CODE >253:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7D9 code CODE >254:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7DA code CODE >256:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7DB code CODE >257:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7DC code CODE >260:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7DD code CODE >261:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7DE code CODE >262:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7DF code CODE >263:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7E0 code CODE >265:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7E1 code CODE >266:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7E2 code CODE >267:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7E3 code CODE >268:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7E4 code CODE >270:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7E5 code CODE >271:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7E6 code CODE >272:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7E7 code CODE >274:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7E8 code CODE >275:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7E9 code CODE >279:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7EA code CODE >280:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7EB code CODE >281:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7EC code CODE >282:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7ED code CODE >283:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7EE code CODE >284:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7EF code CODE >285:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7F0 code CODE >286:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7F1 code CODE >290:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7F2 code CODE >291:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7F3 code CODE >292:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7F4 code CODE >293:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7F5 code CODE >295:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7F6 code CODE >296:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7F7 code CODE >297:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7F8 code CODE >298:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7F9 code CODE >299:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7FA code CODE >302:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7FB code CODE >303:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7FC code CODE >304:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7FD code CODE >305:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7FE code CODE >307:/root/MPLABXProjects/Carrito.X/Carritoo.s
+7FF code CODE >310:/root/MPLABXProjects/Carrito.X/Carritoo.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Hspace_0 800 0 ABS 0 - -
+__Hspace_1 22 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 400F 0 ABS 0 - -
+__Hudata_bank0 0 0 ABS 0 udata_bank0 -
+__Hudata_bank1 0 0 ABS 0 udata_bank1 -
+__Hudata_bank2 0 0 ABS 0 udata_bank2 -
+__Hudata_bank3 0 0 ABS 0 udata_bank3 -
+__LresetVec 0 0 ABS 0 resetVec -
+__HresetVec 0 0 ABS 0 resetVec -
+__Hedata 0 0 ABS 0 edata -
+__Hudata 0 0 ABS 0 udata -
+__Hconfig 4010 0 CONFIG 4 config -
+__Ledata 0 0 ABS 0 edata -
+__Ludata 0 0 ABS 0 udata -
+__Hcode 0 0 ABS 0 code -
+__Hdata 0 0 ABS 0 data -
+__Lcode 0 0 ABS 0 code -
+__Ldata 0 0 ABS 0 data -
+__S0 800 0 ABS 0 - -
+__S1 22 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__Lconfig 0 0 CONFIG 4 config -
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__Ludata_bank0 0 0 ABS 0 udata_bank0 -
+__Ludata_bank1 0 0 ABS 0 udata_bank1 -
+__Ludata_bank2 0 0 ABS 0 udata_bank2 -
+__Ludata_bank3 0 0 ABS 0 udata_bank3 -
+__Hudata_shr 0 0 ABS 0 udata_shr -
+__Ludata_shr 0 0 ABS 0 udata_shr -
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+resetVec 0 72D E5A 3 2
+code 0 730 E60 D0 2
+udata_bank0 1 20 20 2 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
